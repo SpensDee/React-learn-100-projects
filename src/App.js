@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <button className="open-modal-btn" onClick={handleClick}>✨ Открыть окно</button>
-      <div className={open ? 'overlay animated show' : 'overlay animated'}>
+      <div className={`overlay animated ${open && 'show'}`}>
         <div className="modal">
           <svg height="200" viewBox="0 0 200 200" width="200" onClick={handleClick}>
             <title />
